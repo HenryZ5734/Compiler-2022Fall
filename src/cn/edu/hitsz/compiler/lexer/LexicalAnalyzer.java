@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.stream.StreamSupport;
 
 /**
@@ -20,8 +21,8 @@ import java.util.stream.StreamSupport;
  */
 public class LexicalAnalyzer {
     private final SymbolTable symbolTable;
-    private final ArrayList<String> lines = new ArrayList<>();
-    private final ArrayList<Token> tokens = new ArrayList<>();
+    private final LinkedList<String> lines = new LinkedList<>();
+    private final LinkedList<Token> tokens = new LinkedList<>();
 
     public LexicalAnalyzer(SymbolTable symbolTable) {
         this.symbolTable = symbolTable;
